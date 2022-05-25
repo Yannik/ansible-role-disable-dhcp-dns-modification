@@ -1,0 +1,5 @@
+- name: Disable dns modifications by dhcp
+  copy:
+    src: no-dns-modification
+    dest: /etc/dhcp/dhclient-enter-hooks.d/
+  tags: disable-dhcp-dns-modification
